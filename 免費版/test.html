@@ -13,11 +13,73 @@
             margin: 0px;
             font-family: 'Noto Sans TC', sans-serif;
         }
+
+        .wrap {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(120deg, #f7d 50%, transparent 50%) center center / 100% 100%, url("https://picsum.photos/1200/900/?random=1") right center / auto 100%;
+        }
+
+        .banner {
+            height: 100vh;
+            width: 1100px;
+            margin: auto;
+
+        }
+
+        .txt {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .txt h1 {
+            width: 500px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .txt h1::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            display: block;
+            background-color: purple;
+            transition: width .87s;
+        }
+
+        .txt h1:hover::after {
+            width: 100%;
+        }
+
+        .txt:nth-child(1) a {
+            text-decoration: none;
+        }
+
+
+        .txt p {
+            width: 500px;
+        }
     </style>
 </head>
-<img src='https://picsum.photos/300/300/?random=1'>
+
 
 <body>
+
+    <div class="wrap">
+        <div class="banner">
+            <div href="javascript:;" class="txt">
+                <a href="javascript:;">
+                    <h1>簡單簡單簡單</h1>
+                </a>
+                <p>簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單簡單</p>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
