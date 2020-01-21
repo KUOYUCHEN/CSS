@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>交錯漂浮版</title>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap' rel='stylesheet'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* background-color: #666; */
+            margin-bottom: 50px;
+        }
+
+        .item .pic {
+            width: 55%;
+            flex-shrink: 0;
+        }
+
+        .item .pic img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt {
+            width: 55%;
+            flex-shrink: 0;
+            background-color: #07f;
+            position: relative;
+            z-index: 1;
+            padding: 50px 30px;
+        }
+
+        .item>:first-child {
+            margin-right: -10%;
+        }
+
+        .item:nth-child(1) .txt {
+            background: rgba(10, 100, 30, .87);
+        }
+
+        .item:nth-child(2) .txt {
+            background: rgba(55, 53, 156, .87);
+        }
+
+        .item:nth-child(3) .txt {
+            background: rgba(110, 55, 98, 0.87);
+        }
+
+        .item:nth-child(4) .txt {
+            background: rgba(212, 19, 187, 0.87);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+
+        <!-- item 1 -->
+        <div class="item">
+            <div class="txt">
+                <h2>圖文版版區塊</h2>
+                <p>這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/300/?random=1">
+            </div>
+        </div>
+
+        <!-- item 2 -->
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/300/?random=3">
+            </div>
+            <div class="txt">
+                <h2>圖文版版區塊</h2>
+                <p>這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+
+        <!-- item 3 -->
+        <div class="item">
+            <div class="txt">
+                <h2>圖文版版區塊</h2>
+                <p>這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/300/?random=4">
+            </div>
+        </div>
+
+        <!-- item 4 -->
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/300/?random=5">
+            </div>
+            <div class="txt">
+                <h2>圖文版版區塊</h2>
+                <p>這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

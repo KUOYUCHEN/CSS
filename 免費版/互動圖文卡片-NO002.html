@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            width: 25%;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .txt:hover {
+            opacity: 1;
+        }
+
+        .txt h3 {
+            color: rgb(184, 34, 164);
+            font-size: 50px;
+        }
+
+        .txt h3::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #70f;
+            opacity: 0;
+            transition: width .5s .3s;
+        }
+
+        .txt:hover h3::after {
+            width: 100%;
+            opacity: 1;
+        }
+
+
+        .txt p {
+            color: #07f;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=1">
+            <div class="txt">
+                <h3>
+                    金魚都能學得會
+                </h3>
+                <p>
+                    這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=2">
+            <div class="txt">
+                <h3>
+                    金魚都能學得會
+                </h3>
+                <p>
+                    這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=3">
+            <div class="txt">
+                <h3>
+                    金魚都能學得會
+                </h3>
+                <p>
+                    這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300/?random=4">
+            <div class="txt">
+                <h3>
+                    金魚都能學得會
+                </h3>
+                <p>
+                    這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見這畫面實在常見
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
